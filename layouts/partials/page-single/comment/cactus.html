@@ -1,0 +1,12 @@
+<script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+<link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+<div id="cactus"></div>
+<script>
+initComments({
+  node: document.getElementById("cactus"),
+  defaultHomeserverUrl: '{{ or .Site.Params.CactusHomeserverUrl "https://matrix.cactus.chat:8448" }}',
+  serverName: '{{ or .Site.Params.CactusHomeserverName "cactus.chat" }}',
+  siteName: "{{ .Site.Params.CactusSiteName }}",
+  commentSectionId: '{{ .Page.LinkTitle | urlize }}'
+})
+</script>

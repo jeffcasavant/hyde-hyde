@@ -75,6 +75,10 @@ __`Hyde-hyde`__ essentially inherits most of Hyde's [options](https://github.com
   * `UtterancesIssueTerm = "pathname"` Method for Utterances to match issue's to posts (pathname, url, title, og:title)
   * `UtterancesTheme = "github-light"` Theme for Utterances (github-light, github-dark)
 
+* `CactusSiteName = "example.com"` To use [Cactus Comments](https://cactus.chat) instead of the built-in [Disqus](https://disqus.com).  See their [quick-start guide](https://cactus.chat/docs/getting-started/quick-start/) for instructions on how to get one.
+  * `CactusHomeserverUrl = "https://matrix.example.com"` Homeserver on which your [self-hosted Cactus appservice](https://cactus.chat/docs/self-hosting/howto/) is running.  This is not required unless you're self-hosting Cactus.
+  * `CactusHomeserverName = "example.com"` If you're self-hosting Cactus. you'll need to override this as well.
+
 * `Commento = true`: to use [Commento](https://commento.io/) instead of the built-in [Disqus](https://disqus.com). This option should be used exclusively with `disqusShortname = "disqus-shortname"`.
   * `CommentoHost = "your-commento-instance"` [Self-hosted Commento](https://docs.commento.io/installation/self-hosting/) instance. This is not required if you're a [Commento.io](https://commento.io) user.
 

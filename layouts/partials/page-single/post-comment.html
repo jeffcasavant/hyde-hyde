@@ -7,5 +7,7 @@
         {{ partial "page-single/comment/utterances.html" . }}
     {{ else if .Site.Params.Commento }}
         {{ partial "page-single/comment/commento.html" . }}
+    {{ else if .Site.Params.CactusSiteName }}
+        {{ partial "page-single/comment/cactus.html" . }}
     {{ end }}
 {{ end }}
