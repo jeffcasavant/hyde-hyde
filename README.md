@@ -78,7 +78,11 @@ __`Hyde-hyde`__ essentially inherits most of Hyde's [options](https://github.com
 * `Commento = true`: to use [Commento](https://commento.io/) instead of the built-in [Disqus](https://disqus.com). This option should be used exclusively with `disqusShortname = "disqus-shortname"`.
   * `CommentoHost = "your-commento-instance"` [Self-hosted Commento](https://docs.commento.io/installation/self-hosting/) instance. This is not required if you're a [Commento.io](https://commento.io) user.
 
-* `[params.social]`: in this section, you can set many social identities such as Twitter, Facebook, Github, Bitbucket, Gitlab, Instagram, LinkedIn, StackOverflow, Medium, Xing, Keybase.
+* `CactusSiteName = "example.com"` To use [Cactus Comments](https://cactus.chat) instead of the built-in [Disqus](https://disqus.com).  See their [quick-start guide](https://cactus.chat/docs/getting-started/quick-start/#register-your-site) for instructions on how to get a site name.
+  * `CactusHomeserverUrl = "https://matrix.example.com"` Homeserver on which your [self-hosted Cactus appservice](https://cactus.chat/docs/self-hosting/howto/) is running.  This is not required unless you're self-hosting Cactus.
+  * `CactusHomeserverName = "example.com"` If you're self-hosting Cactus. you'll need to override this as well.
+
+* `[params.social]`: in this section, you can set many social identities such as Twitter, Facebook, Github, Bitbucket, Gitlab, Instagram, LinkedIn, StackOverflow, Medium, Xing, Keybase, Matrix.
 
   ```toml
   [params.social]
