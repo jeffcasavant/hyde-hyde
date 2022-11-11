@@ -70,4 +70,7 @@
 	{{ with .Site.Params.social.matrix }}
 	<a href="https://matrix.to/#/{{.}}" rel="me"><i class="fa fa-matrix-org fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
+	{{ with .Site.Params.social.mastodon }}
+    <a href="https://{{.}}" rel="me"><i class="fa fa-mastodon fa-lg" aria-hidden="true"></i></a>
+	{{ end }}
 </section>
